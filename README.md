@@ -76,4 +76,4 @@ Now you are ready to create your first deployment with Loadbalancer Service, we 
 
 That's it you successfully deployed your kubernetes cluster and exposed it to external world.
 
-Test it on your local env. and share your feedback too.
+Test it on your local env. and share your feedback too :)
