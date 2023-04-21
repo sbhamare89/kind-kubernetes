@@ -1,7 +1,7 @@
 # kind-kubernetes
 This repository created for creating "kubernetes in docker" on your local machine
 
-Our configuration as followed, it may varry according to your existing setup.
+Our configuration as followed, it may vary according to your existing setup.
 Operating system : popos - Ubuntu 22.04
 RAM : 8GB ( minimum )
 
@@ -72,6 +72,10 @@ To achive this goal we are going to install MetalLB load balancer to reach our d
 ```
 Now you are ready to create your first deployment with Loadbalancer Service, we provided sample yaml template to create pods and expose them via Loadbalancer type.
 ```
+    xlr8@pop-os:/media/xlr8/data/study/workspace/kind-kubernetes$ kubectl create -f testdepl.yaml 
+    pod/foo-app created
+    pod/bar-app created
+    service/foo-service created
     xlr8@pop-os:/media/xlr8/data/study/workspace/kind-kubernetes$ kubectl get svc | grep -i foo
     NAME                  TYPE           CLUSTER-IP     EXTERNAL-IP   PORT(S)          AGE
     foo-service           LoadBalancer   10.96.124.13   172.18.0.13   5678:32383/TCP   9s
